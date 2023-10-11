@@ -56,4 +56,5 @@ def predict():
     return render_template('result.html',prediction =thisdict[a])
 
 if __name__ == '__main__':
+      
 	app.run(debug=True)
