@@ -6,10 +6,13 @@ from sklearn.naive_bayes import MultinomialNB
 import numpy as np
 import pickle
 
-
+# Updating on github 10/11/2023git 
 filename = 'nlp_model.pkl'
+
 clf = pickle.load(open(filename, 'rb'))
+
 cv=pickle.load(open('tranform.pkl','rb'))
+
 app = Flask(__name__)
 
 @app.route('/')
